@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Online jQuery Editor</title>
+    <style type="text/css">
+    	#box{
+    		width: 450px;
+    		height: 450px;
+    		border: 1px solid black;
+    		background-color: white; 
+    	}
+    	.col {
+    		width: 100px;
+    		height: 100px;
+    		border: 1px solid black;
+    		background-color: white;
+            text-align: center;
+            font-size: 60px;
+    	}
+   
+    </style>
+    <script src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function() {
+        	var pindut = 0;
+
+            $(".col").click(function() {
+            pindut++;
+            if (pindut == 1) {
+            	$(this).html("X");
+            }
+            else if (pindut == 2) {
+            	$(this).html("O");
+            	pindut = 0;
+            }
+        });
+        });
+    </script>
+
+</head>
+
+<body>
+	<center>
+        <h1>Tic-tac-toe</h1>
+        <h5>red=X</h5>
+        <h5>blue=O</h5>
+
+<table class="center"id="box">
+    <tr class="row">
+        <td class="col" id="box1"></td>
+        <td class="col" id="box2"></td>
+        <td class="col" id="box3"></td>
+    </tr>
+
+
+ 	  <tr class="row">
+        <td class="col" id="box4"></td>
+        <td class="col" id="box5"></td>
+        <td class="col" id="box6"></td>
+    </tr>
+
+
+ 	<tr class="row">
+ 		<td class="col" id="box7"></td>
+ 		<td class="col" id="box8"></td>
+ 		<td class="col" id="box9"></td>
+ 	</tr>
+
+</table>
+
+ 
+</body>
+
+</html>
